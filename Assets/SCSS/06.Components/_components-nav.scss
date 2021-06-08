@@ -1,0 +1,28 @@
+.c-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-grey;
+    color: $color-white;
+    padding: 1rem 1.5rem;
+
+    &__logo{
+
+        a{
+            display: flex;
+            flex-direction: column;
+    
+        }
+
+    
+        span{
+            font-family: 'ZCOOL KuaiLe', cursive;
+        }
+    }
+
+    .fas{
+        font-size: 1.5rem;
+        color: $color-white;
+    }
+}
