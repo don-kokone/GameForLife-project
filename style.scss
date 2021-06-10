@@ -2,4 +2,13 @@
 @import "./Assets/SCSS/01.Settings/settings-global";
 @import "./Assets/SCSS/01.Settings/settins-colors";
 
+@import "./Assets/SCSS/02.Tools/generic-mixins";
+
+
+@import "./Assets/SCSS/04.Elements/elements-links";
+@import "./Assets/SCSS/04.Elements/elements-spans";
+
+@import "./Assets/SCSS/06.Components/components-game-card";
 @import "./Assets/SCSS/06.Components/components-nav";
+
+@import "./Assets/SCSS/07.Utilities/utilities-centering";

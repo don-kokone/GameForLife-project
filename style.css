@@ -26,6 +26,119 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+span {
+  font-size: 0.7rem;
+}
+
+.c-game-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: calc(100vw - 5%);
+  background-color: #1547a3;
+}
+
+.c-game-card > * {
+  margin: 0.5rem 0;
+}
+
+.c-game-card__cover {
+  width: 100%;
+}
+
+.c-game-card__discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-game-card__discount .order-game__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.c-game-card__discount .order-game__prices p {
+  font-weight: 700;
+}
+
+.c-game-card__discount .order-game__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 8rem;
+  height: 3rem;
+}
+
+.c-game-card__discount .order-game__buttons a, .c-game-card__discount .order-game__buttons button {
+  background-color: #1669b8;
+  height: 100%;
+}
+
+.c-game-card__discount .order-game__buttons a {
+  width: 60%;
+  text-align: center;
+  color: white;
+}
+
+.c-game-card__discount .order-game__buttons button {
+  border: none;
+  width: 40%;
+  margin-left: 3px;
+}
+
 .c-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +156,7 @@ body {
   background-color: #2a2a2a;
   color: white;
   padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .c-navigation__logo a {
@@ -62,5 +176,9 @@ body {
 .c-navigation .fas {
   font-size: 1.5rem;
   color: white;
+}
+
+.u-centering {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
