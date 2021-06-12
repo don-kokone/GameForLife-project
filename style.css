@@ -28,6 +28,7 @@ body {
 
 a {
   text-decoration: none;
+  text-align: center;
 }
 
 a:visited {
@@ -42,49 +43,21 @@ span {
   font-size: 0.7rem;
 }
 
+p {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+main {
+  padding: 0 5%;
+  background-color: #121212;
+}
+
 .c-game-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: calc(100vw - 5%);
-  background-color: #1547a3;
-}
-
-.c-game-card > * {
-  margin: 0.5rem 0;
-}
-
-.c-game-card__cover {
-  width: 100%;
-}
-
-.c-game-card__discount {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.c-game-card__discount .order-game__prices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,10 +71,80 @@ span {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 100%;
+  background-color: #2b4c8a;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.c-game-card__discount .order-game__prices p {
+.c-game-card__text-wrapper {
+  color: #a3a7ad;
+  font-weight: bolder;
+  padding-left: 0.5rem;
+}
+
+.c-game-card__text-wrapper > * {
+  margin-top: 1rem;
+}
+
+.c-game-card__cover {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c-game-card__heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.c-game-card__invitation {
+  margin-bottom: 3rem;
+}
+
+.c-game-card__discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.c-game-card__discount .order-game__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 1rem;
+}
+
+.c-game-card__discount .order-game__price p {
   font-weight: 700;
+}
+
+.c-game-card__discount .order-game__price--old {
+  text-decoration: line-through;
+}
+
+.c-game-card__discount .order-game__price--current {
+  color: white;
 }
 
 .c-game-card__discount .order-game__buttons {
@@ -123,20 +166,22 @@ span {
 }
 
 .c-game-card__discount .order-game__buttons a, .c-game-card__discount .order-game__buttons button {
-  background-color: #1669b8;
+  background-color: #2d90ec;
+  color: white;
   height: 100%;
+  border-radius: 2px;
 }
 
 .c-game-card__discount .order-game__buttons a {
   width: 60%;
-  text-align: center;
-  color: white;
+  padding: 0.5rem 1rem;
 }
 
 .c-game-card__discount .order-game__buttons button {
   border: none;
   width: 40%;
   margin-left: 3px;
+  font-size: 1.2rem;
 }
 
 .c-navigation {
@@ -156,7 +201,10 @@ span {
   background-color: #2a2a2a;
   color: white;
   padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
 .c-navigation__logo a {
@@ -178,7 +226,69 @@ span {
   color: white;
 }
 
-.u-centering {
-  margin: auto;
+.secondary-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondary-wrapper .games-for-selling__link-to-all-offers {
+  border: 2px solid white;
+  padding: 2px 0.5rem;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-paid-game {
+  max-width: 100%;
+  background-color: transparent;
+  color: white;
+  overflow: hidden;
+}
+
+.c-paid-game__cover {
+  max-width: 15rem;
+  height: auto;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c-paid-game__title {
+  overflow: hidden;
+}
+
+.u-padding--top {
+  padding: 1rem 0 !important;
+}
+
+.u-margin--top {
+  margin-top: 4.4rem !important;
 }
 /*# sourceMappingURL=style.css.map */

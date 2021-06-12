@@ -7,8 +7,14 @@
 
 @import "./Assets/SCSS/04.Elements/elements-links";
 @import "./Assets/SCSS/04.Elements/elements-spans";
+@import "./Assets/SCSS/04.Elements/elements-paragraphs";
+@import "./Assets/SCSS/04.Elements/elements-sections";
+@import "./Assets/SCSS/04.Elements/elements-main";
 
-@import "./Assets/SCSS/06.Components/components-game-card";
+@import "./Assets/SCSS/06.Components/components-free-game-card";
 @import "./Assets/SCSS/06.Components/components-nav";
+@import "./Assets/SCSS/06.Components/components-games-for-selling-section";
+@import "./Assets/SCSS/06.Components/component-paid-game-card";
 
-@import "./Assets/SCSS/07.Utilities/utilities-centering";
+@import "./Assets/SCSS/07.Utilities/utilities-padding";
+@import "./Assets/SCSS/07.Utilities/utilities-margin";

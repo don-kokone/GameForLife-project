@@ -1,0 +1,89 @@
+.c-game-card{
+
+    @include standart-flex (column, center, flex-start);
+    max-width: 100%;
+    background-color: $color-dark-blue;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+
+    &__text-wrapper{
+        color: $color-light-grey;
+        font-weight: bolder;
+        padding-left: 0.5rem;
+
+        & > *{
+            margin-top: 1rem;
+        }
+    }
+
+    &__cover{
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;     
+    }
+
+    &__heading{
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__invitation{
+        margin-bottom: 3rem;
+    }
+
+    &__discount{
+        @include standart-flex (row, center, center);
+        margin-bottom: 0.5rem;
+        
+        
+    
+        .order-game__price{
+            
+            @include standart-flex (column, center, flex-start);
+            margin-right: 1rem;
+
+
+            p{
+                font-weight: 700;
+            }
+
+            &--old{
+                text-decoration: line-through;
+            }
+
+            &--current{
+                color: $color-white;
+            }
+
+        }
+
+        .order-game__buttons{
+            @include standart-flex (row, center, center);
+            max-width: 8rem;
+            height: 3rem;
+            
+
+            a, button{
+                background-color: $color-blue;
+                color: $color-white;
+                height: 100%;
+                border-radius: 2px;
+
+            }
+
+            a{
+                width: 60%;
+                padding: 0.5rem 1rem;
+            }
+          
+            button{
+                border: none;
+                width: 40%;
+                margin-left: 3px;
+                font-size: 1.2rem;
+                
+            }
+        }
+
+    }
+}
