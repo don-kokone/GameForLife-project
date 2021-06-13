@@ -10,6 +10,7 @@
         color: $color-light-grey;
         font-weight: bolder;
         padding-left: 0.5rem;
+        
 
         & > *{
             margin-top: 1rem;
@@ -17,24 +18,50 @@
     }
 
     &__cover{
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         border-radius: 0.5rem 0.5rem 0 0;     
+    }
+
+    &__banner{
+        color: $color-white;
+        background-color: $color-blue;
+        margin-top: -0.3rem;
+        padding: 0.3rem 0;
+        border-bottom-left-radius: 0.5rem;
+        border-radius: 0 0 0.5rem 0.5rem; 
+        text-transform: uppercase;
+        font-weight: bolder;
+
+       
     }
 
     &__heading{
         color: $color-white;
         text-transform: uppercase;
         letter-spacing: 1px;
+        text-overflow: ellipsis;
+
+        &--small{
+            text-transform: none; 
+        }
     }
 
-    &__invitation{
+    &__info{
+        margin: 0;
+        color: $color-white;
+    }
+
+    &__invitation {
         margin-bottom: 3rem;
+    }
+    &__publisher{
+        margin-bottom: 0rem;
     }
 
     &__discount{
         @include standart-flex (row, center, center);
         margin-bottom: 0.5rem;
-        
         
     
         .order-game__price{
@@ -82,6 +109,15 @@
                 margin-left: 3px;
                 font-size: 1.2rem;
                 
+            }
+
+            &--discount-tag{
+                background-color: $color-blue;
+                color: $color-white;
+                padding: 0.5rem 0.7rem;
+                margin-right: 1rem;
+                border-radius: 2px;
+
             }
         }
 

@@ -57,6 +57,93 @@ main {
   background-color: #121212;
 }
 
+.c-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.c-navigation__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-navigation__logo span {
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.c-navigation .fas {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.discounted-games-secondary-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.discounted-games-secondary-wrapper .discounted-games__heading,
+.discounted-games-secondary-wrapper .discounted-games__link-to-all-offers {
+  color: white;
+}
+
+.discounted-games-secondary-wrapper .discounted-games__link-to-all-offers {
+  border: solid 1px white;
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.7rem;
+}
+
+.discounted-games-primary-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-column-gap: 6px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .c-game-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,18 +174,48 @@ main {
 }
 
 .c-game-card__cover {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.c-game-card__banner {
+  color: white;
+  background-color: #2d90ec;
+  margin-top: -0.3rem;
+  padding: 0.3rem 0;
+  border-bottom-left-radius: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.c-game-card__banner--dark {
+  background-color: #2a2a2a;
 }
 
 .c-game-card__heading {
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-overflow: ellipsis;
+}
+
+.c-game-card__heading--small {
+  text-transform: none;
+}
+
+.c-game-card__info {
+  margin: 0;
+  color: white;
 }
 
 .c-game-card__invitation {
   margin-bottom: 3rem;
+}
+
+.c-game-card__publisher {
+  margin-bottom: 0rem;
 }
 
 .c-game-card__discount {
@@ -184,104 +301,12 @@ main {
   font-size: 1.2rem;
 }
 
-.c-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #2a2a2a;
+.c-game-card__discount .order-game__buttons--discount-tag {
+  background-color: #2d90ec;
   color: white;
-  padding: 1rem 1.5rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}
-
-.c-navigation__logo a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.c-navigation__logo span {
-  font-family: 'ZCOOL KuaiLe', cursive;
-}
-
-.c-navigation .fas {
-  font-size: 1.5rem;
-  color: white;
-}
-
-.secondary-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.secondary-wrapper .games-for-selling__link-to-all-offers {
-  border: 2px solid white;
-  padding: 2px 0.5rem;
-  text-transform: uppercase;
+  padding: 0.5rem 0.7rem;
+  margin-right: 1rem;
   border-radius: 2px;
-  font-size: 0.8rem;
-}
-
-.main-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.c-paid-game {
-  max-width: 100%;
-  background-color: transparent;
-  color: white;
-  overflow: hidden;
-}
-
-.c-paid-game__cover {
-  max-width: 15rem;
-  height: auto;
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.c-paid-game__title {
-  overflow: hidden;
 }
 
 .u-padding--top {
@@ -290,5 +315,13 @@ main {
 
 .u-margin--top {
   margin-top: 4.4rem !important;
+}
+
+.u-margin--zero {
+  margin: 0;
+}
+
+.u-color {
+  background-color: transparent !important;
 }
 /*# sourceMappingURL=style.css.map */
