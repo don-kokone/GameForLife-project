@@ -99,38 +99,7 @@ main {
   color: white;
 }
 
-.discounted-games-secondary-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
-}
-
-.discounted-games-secondary-wrapper .discounted-games__heading,
-.discounted-games-secondary-wrapper .discounted-games__link-to-all-offers {
-  color: white;
-}
-
-.discounted-games-secondary-wrapper .discounted-games__link-to-all-offers {
-  border: solid 1px white;
-  border-radius: 3px;
-  padding: 0.3rem 0.5rem;
-  text-transform: uppercase;
-  font-weight: bolder;
-  font-size: 0.7rem;
-}
-
-.discounted-games-primary-wrapper {
+.games-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -188,10 +157,6 @@ main {
   border-radius: 0 0 0.5rem 0.5rem;
   text-transform: uppercase;
   font-weight: bolder;
-}
-
-.c-game-card__banner--dark {
-  background-color: #2a2a2a;
 }
 
 .c-game-card__heading {
@@ -307,6 +272,93 @@ main {
   padding: 0.5rem 0.7rem;
   margin-right: 1rem;
   border-radius: 2px;
+}
+
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header__name, .section-header__link-to-all-offers {
+  background-color: white;
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem;
+}
+
+.section-header__name {
+  text-transform: capitalize;
+}
+
+.section-header__link-to-all-offers {
+  border: solid 1px white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.7rem;
+}
+
+.section-header .fas {
+  margin-right: 0.5rem;
+  color: #121212;
+}
+
+.footer {
+  background-color: #2a2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a3a7ad;
+}
+
+.footer__social-icons {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.footer__social-icons .fab {
+  margin-left: 1rem;
+}
+
+.footer__link-wrapper {
+  margin: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__link-wrapper a {
+  margin: 0.3rem 0;
 }
 
 .u-padding--top {

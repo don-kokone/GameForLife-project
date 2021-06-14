@@ -1,0 +1,26 @@
+.footer {
+    background-color: $color-grey;
+    @include standart-flex;
+    color: $color-light-grey;
+
+
+    &__social-icons {
+        margin-top: 1rem;
+     
+        font-size: 1.4rem;
+
+
+        .fab {
+            margin-left: 1rem;
+        }
+    }
+
+    &__link-wrapper{
+       
+       margin: 2rem 2rem;
+      @include standart-flex(column, flex-start, flex-start);
+      a{
+          margin: 0.3rem 0;
+      }
+    }
+}

@@ -1,0 +1,31 @@
+.section-header {
+
+@include standart-flex(row, space-between, center);
+margin-bottom: 1rem;
+
+    &__name,
+    &__link-to-all-offers {
+        background-color: $color-white;
+        border-radius: 3px;
+        padding: 0.3rem 0.5rem;
+    }
+
+    &__name{
+        text-transform: capitalize;
+    }
+
+    &__link-to-all-offers {
+      
+        border: solid 1px white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 0.7rem;
+        
+    }
+
+    .fas{
+        margin-right: 0.5rem;
+        color: $color-dark-grey ;
+
+    }
+}
