@@ -90,11 +90,21 @@ main {
           flex-direction: column;
 }
 
+.c-navigation__logo a .fas {
+  font-size: 2rem;
+  text-align: left;
+}
+
 .c-navigation__logo span {
   font-family: 'ZCOOL KuaiLe', cursive;
 }
 
-.c-navigation .fas {
+.c-navigation button {
+  background-color: transparent;
+  border: none;
+}
+
+.c-navigation button .fas {
   font-size: 1.5rem;
   color: white;
 }

@@ -9,12 +9,16 @@
     left: 0;
     width: 100vw;
     
-
     &__logo{
 
         a{
             display: flex;
             flex-direction: column;
+
+            .fas{
+                font-size: 2rem;
+                text-align: left;
+            }
     
         }
 
@@ -24,8 +28,16 @@
         }
     }
 
-    .fas{
-        font-size: 1.5rem;
-        color: $color-white;
+    button {
+background-color: transparent;
+border: none;
+        .fas{
+            font-size: 1.5rem;
+            color: $color-white;
+        }
     }
+ 
+  
+
+    
 }
